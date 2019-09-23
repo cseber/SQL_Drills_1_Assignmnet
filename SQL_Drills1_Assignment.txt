@@ -35,10 +35,12 @@ WHERE year IN (1990, 2000, 2010);
 Answer = 3026
 
 7.
-SELECT *
+SELECT COUNT(*)
 FROM vehicles
 WHERE year BETWEEN 1987 AND 2005
 AND year NOT IN (1990, 2000);
+
+Answer = 17235
 
 8.
 SELECT year, make, model, (hwy + cty)/2 AS average_mpg
