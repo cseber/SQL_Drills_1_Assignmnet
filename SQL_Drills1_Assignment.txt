@@ -5,7 +5,7 @@ FROM vehicles;
 Answer: 33442
 
 2.
-SELECT COUNT(*)
+SELECT *
 FROM vehicles;
 
 3.
