@@ -67,12 +67,10 @@ ORDER BY year DESC, hwy DESC;
 12.
 SELECT COUNT(*)
 FROM vehicles
-WHERE make = 'Ford'
-	OR make = 'Chevrolet'
-AND class = 'Compact Cars'
-	OR class = 'Two Seaters';
+WHERE make IN ('Ford', 'Chevrolet')
+AND class IN ('Compact Cars', 'Two Seaters');
 
-Answer = 4625
+Answer = 612
 
 13.
 SELECT *
@@ -107,22 +105,3 @@ Answer = 1964
 SELECT *
 FROM vehicles
 WHERE model LIKE '__X%';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
